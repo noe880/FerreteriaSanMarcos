@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Ferrreteria San Martin</title>
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Ferrreteria San Martin</h1>
+    <div class="info">
+      <a onclick="offSale()" class="link">Off Sale</a>
+      <a onclick="scrollToTop('productos')" class="link">Productos</a>
+      <a onclick="scrollToTop('productos-destacados')" class="link">Productos destacados</a>
+      <a href="#contacto" class="link">Registrate</a>
+    </div>
+  </header>
+  <div id="encabezado" class="encabezado">
+    <div class="contenedorButton">
+      <input type="text" id="buscar-producto" placeholder="Buscar producto...">
+    </div>
+    <div class="redes">
+      <a href="https://www.facebook.com/tu_pagina" target="_blank" class="social-btn">
+        <img src="./img/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/tu_pagina" target="_blank" class="social-btn">
+        <img src="./img/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/tu_pagina" target="_blank" class="social-btn">
+        <img src="./img/whatsapp.png" alt="Twitter">
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <section class="productos-destacados" id="productos-destacados">
+      <h2>Productos Destacados</h2>
+      <div id="contenedor-productos-destacados" class="contenedor-productos"></div>
+    </section>
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div id="contenedor-productos" class="contenedor-productos"></div>
+    </section>
+  </main>
+
+  <section class="productos-destacados">
+    <h2>Registrate</h2>
+  </section>
+
+  <div id="contacto">
+    <div class="form-container">
+      <div class="LoginText">
+        <h1>¡Únete a nuestra comunidad y vive la experiencia completa de nuestra ferretería!</h1>
+        <p>Al proporcionarnos tu correo electrónico, no solo te mantendrás informado y obtendrás beneficios adicionales, sino que también nos permitirás brindarte un servicio más personalizado y eficiente.</p>
+        <p><strong>Descubre todos los beneficios que obtendrás:</strong></p>
+        <ul class="benefits-list">
+          <li>Notificaciones exclusivas sobre promociones, descuentos y ofertas especiales.</li>
+          <li>Actualizaciones de catálogos y novedades en productos.</li>
+          <li>Atención al cliente ágil y efectiva para resolver cualquier consulta.</li>
+        </ul>
+        <p>No te pierdas ninguna oportunidad y forma parte de nuestra comunidad. ¡Únete hoy mismo!</p>
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+
+    <form class="form-container" action="http://serverandrea.up.railway.app/email" method="post">
+      <div class="form-group">
+        <div class="imgLogin"></div>
+      </div>
+      <div class="form-group">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" id="email" placeholder="Correo electronico" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Enviar</button>
+      </div>
+      <div class="form-group">
+        <p>Al enviar este formulario, aceptas que la información proporcionada será utilizada para enviarte información y promociones.</p>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div id="informacion">
+      <p>Av. Ferretería #123</p>
+      <p>Teléfono: 555-123-456</p>
+      <p>Correo: info@miherramienta.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
