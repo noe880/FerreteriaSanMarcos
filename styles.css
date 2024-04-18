@@ -51,21 +51,21 @@
     padding: 200px 0;
     z-index: 1000;
   }
+  .contenedorButton{
+    position:relative;
+    top: 219px;
+    text-align: right;
+    margin-right: 10%;
+  }
 
   #buscar-producto {
-    width: 20%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 2px solid #ff7b00;
+    width: 220px;
+    padding: 9.5px;
+    border: none;
     background-color: #ff7b00;
     border-radius: 40px;
-    box-sizing: border-box; 
-    font-size: 16px;
-    position:relative;
-    top: 235px;
-    left: 400px;
-    z-index: 9000;
 }
+
   
   #buscar-producto::placeholder {
     color: #ffffff;
@@ -256,9 +256,7 @@
     cursor: pointer;
     width: 100%;
   }
-  .contenedorButton{
-    text-align: center;
-  }
+
   .imgLogin{
     width: 120px;
     height: 120px;
@@ -293,7 +291,7 @@
   }
   .redes{
       position:relative;
-      margin-left: 100px;
+      margin-left: 5%;
       top: 180px;
   }
   
